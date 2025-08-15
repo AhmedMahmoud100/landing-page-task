@@ -26,9 +26,6 @@ const Header = () => {
               <Button href="#" variant="primary" size="sm">Download Template</Button>
             </div>
           </div>
-
-
-
         </div>
       </Container>
     </header>
