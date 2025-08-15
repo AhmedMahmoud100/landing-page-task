@@ -17,13 +17,18 @@ const Header = () => {
             <span className="text-2xl font-bold text-white">Squid</span>
           </Link>
 
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#" className="text-white/80 hover:text-white transition-colors">Home</Link>
-          </nav>
+          <div className="flex gap-6">
+            <nav className="hidden md:flex items-center space-x-8">
+              <Link href="#" className="text-[#9E9E9E] hover:text-white transition-colors">Home</Link>
+            </nav>
 
-          <div className="flex items-center space-x-4">
-            <Button href="#" variant="primary" size="sm">Download Template</Button>
+            <div className="flex items-center space-x-4">
+              <Button href="#" variant="primary" size="sm">Download Template</Button>
+            </div>
           </div>
+
+
+
         </div>
       </Container>
     </header>
