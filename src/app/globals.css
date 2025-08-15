@@ -2,11 +2,16 @@
 
 :root {
   --primary: #ff6b9d;
-  --primary-gradient: linear-gradient(90deg, #ff6b9d 0%, #7366ff 100%);
+  --primary-gradient: linear-gradient(92.51deg, #FF9898 0.48%, #8054FF 100%);
   --secondary: #7366ff;
   --background: #000000;
   --foreground: #ffffff;
   --card-bg: #111111;
+  --accent: #36d1dc;
+  --success: #4caf50;
+  --warning: #ff9800;
+  --error: #f44336;
+  --card-hover-shadow: rgba(255, 107, 157, 0.2);
 }
 
 @theme inline {
@@ -29,8 +34,9 @@ body {
   }
   
   .gradient-bg {
-    background: var(--primary-gradient);
-  }
+  background: var(--primary-gradient);
+  transition: opacity 0.3s ease;
+}
   
   .card {
     background: var(--card-bg);
