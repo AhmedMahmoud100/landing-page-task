@@ -18,7 +18,7 @@ const Button = ({
   className = '',
   onClick,
 }: ButtonProps) => {
-  const baseStyles = 'rounded-full font-medium transition-all duration-300 flex items-center justify-center';
+  const baseStyles = 'rounded-md font-medium transition-all duration-300 flex items-center justify-center';
   
   const variantStyles = {
     primary: 'gradient-bg text-white hover:opacity-90',
