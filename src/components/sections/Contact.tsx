@@ -7,7 +7,7 @@ const Contact = () => {
     <section id="contact" className="py-20 relative">
 
       <Container>
-        <div className="flex flex-col lg:flex-row gap-12 items-center">
+        <div className="flex flex-col lg:flex-row gap-12 items-center pt-[200px]">
           <div className="lg:w-1/2">
             <img src="/images/earth.png" alt="Globe" className="w-full h-auto" />
           </div>
