@@ -2,6 +2,8 @@ import React from 'react';
 import Container from '../ui/Container';
 import Card from '../ui/Card';
 import { CheckIcon, CogIcon, LightningIcon, ClockIcon, ChartIcon, CloudIcon } from '../icons';
+import Button from '../ui/Button';
+import Image from 'next/image';
 
 type FeatureProps = {
   icon: React.ReactNode;
@@ -26,46 +28,46 @@ const Features = () => {
     {
       icon: <CheckIcon />,
       title: 'Fully Customizable',
-      description: 'Tailor every aspect of your landing page to match your brand identity and requirements.',
+      description: 'A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem.',
     },
     {
       icon: <CogIcon />,
       title: 'Fully Customizable',
-      description: 'Configure every element to create a unique experience that perfectly represents your brand.',
+      description: 'A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem.',
     },
     {
       icon: <LightningIcon />,
       title: 'Fully Customizable',
-      description: 'Optimize your landing page for maximum performance and conversion rates.',
+      description: 'A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem.',
     },
     {
       icon: <ClockIcon />,
       title: 'Fully Customizable',
-      description: 'Save time with our ready-to-use components that can be quickly assembled into a complete page.',
+      description: 'A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem.',
     },
     {
       icon: <ChartIcon />,
       title: 'Fully Customizable',
-      description: 'Track your landing page performance with built-in analytics and optimization tools.',
+      description: 'A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem.',
     },
     {
       icon: <CloudIcon />,
       title: 'Fully Customizable',
-      description: 'Deploy your landing page to the cloud with just a few clicks and scale as needed.',
+      description: 'A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem.',
     },
   ];
 
   return (
-    <section id="features" className="pb-8 relative">
+    <section id="features" className="pb-8 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
       <Container>
         <div className="mb-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Feature Boxes</h2>
-          <p className="text-white/60 max-w-2xl">
-            Our platform offers a comprehensive set of features designed to help you create stunning landing pages that convert visitors into customers.
+          <p className="text-white/60 max-w-[400px]">
+            A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}
@@ -74,6 +76,25 @@ const Features = () => {
               description={feature.description}
             />
           ))}
+        </div>
+
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="md:w-1/2">
+            <Image
+              src="/images/guide.png"
+              alt="Guide"
+              width={500}
+              height={500}
+              className="w-full h-auto"
+            />
+          </div>
+          <div className="md:w-1/2">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">We're here to guide and help you at all times</h2>
+            <p className="text-white/60 mb-8 max-w-md">
+              A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem.
+            </p>
+            <Button href="#" variant="primary">Download</Button>
+          </div>
         </div>
       </Container>
     </section>
