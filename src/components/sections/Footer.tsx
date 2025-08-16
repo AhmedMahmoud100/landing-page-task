@@ -21,13 +21,13 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#0a0a0a] text-white">
+    <footer className="bg-[#18181C] text-white">
       <Container>
         <div className="py-12">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-4">
-              <SquidLogo />
-              <p className="text-white/60 mt-4 max-w-xs">
+              <SquidLogo width={56} height={45} />
+              <p className="text-white/60 mt-4 max-w-xs leading-[28px]">
                 A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem
               </p>
             </div>
@@ -81,25 +81,28 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        <div className="border-t border-white/10 py-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/60 text-sm mb-4 md:mb-0">
-            All Rights Reserved Inkyy.com {currentYear}
-          </p>
-          <div className="flex space-x-4">
-            {socialLinks.map((link, index) => (
-              <a
-                key={index}
-                href={link.href}
-                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-colors"
-                aria-label={link.name}
-              >
-                {link.icon}
-              </a>
-            ))}
-          </div>
-        </div>
       </Container>
+      <div className='bg-[#000000]'>
+        <Container>
+          <div className="py-8 flex flex-col md:flex-row justify-between items-center ">
+            <p className="text-white/60 text-sm mb-4 md:mb-0">
+              All Rights Reserved Inkyy.com {currentYear}
+            </p>
+            <div className="flex space-x-4">
+              {socialLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  className="w-10 h-10 rounded-2xl bg-[#18181C] flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-colors"
+                  aria-label={link.name}
+                >
+                  {link.icon}
+                </a>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </div>
     </footer>
   );
 };
