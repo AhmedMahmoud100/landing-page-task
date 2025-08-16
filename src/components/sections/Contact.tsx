@@ -28,8 +28,8 @@ const Contact = () => {
             />
           </div>
 
-          <div className="lg:w-1/2 hidden md:block">
-            <img src="/images/earth.png" alt="Globe" className="w-full h-auto" />
+          <div className="lg:w-1/2 hidden md:block relative w-full h-[500px]">
+            <Image src="/images/earth.png" alt="Globe" fill className="object-contain" />
           </div>
 
           <div className="lg:w-1/2">
