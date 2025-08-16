@@ -20,6 +20,10 @@
   --font-sans: var(--font-inter);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -32,18 +36,18 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
+
   .gradient-bg {
-  background: var(--primary-gradient);
-  transition: opacity 0.3s ease;
-}
-  
+    background: var(--primary-gradient);
+    transition: opacity 0.3s ease;
+  }
+
   .card {
     background: var(--card-bg);
     border-radius: 0.75rem;
     transition: all 0.3s ease;
   }
-  
+
   .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(115, 102, 255, 0.1);
