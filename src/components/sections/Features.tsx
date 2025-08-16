@@ -14,8 +14,8 @@ type FeatureProps = {
 
 const FeatureCard = ({ icon, title, description, isGradient }: FeatureProps) => {
   return (
-    <Card className="flex flex-col items-center text-center h-full px-6 lg:px-12">
-      <div className={`p-7 rounded-3xl ${isGradient ? "gradient-bg" : "bg-[#222228]"} flex items-center justify-center mb-4`}>
+    <Card className="flex flex-col items-center text-center py-10 px-6 lg:px-12">
+      <div className={`p-7 rounded-3xl ${isGradient ? "gradient-bg" : "bg-[#222228]"} flex items-center justify-center mb-8`}>
         {icon}
       </div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
