@@ -92,7 +92,7 @@ const Features = () => {
             />
           </div>
           <div className="md:w-1/2 max-w-xs">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4  leading-[50px]">We're here to guide and help you at all times</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4  leading-[50px]">{"We're here to guide and help you at all times"}</h2>
             <p className="text-white/60 mb-8 max-w-md">
               A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem.
             </p>
