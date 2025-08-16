@@ -32,7 +32,7 @@ const Companies = () => {
         </div>
 
         <div
-          className="flex gap-8 rounded-3xl absolute p-12 md:p-18 bg-cover bg-center z-10 gradient-bg w-[900px] left-1/2 -translate-x-1/2 bottom-0 translate-y-1/2"
+          className="flex gap-8 rounded-3xl absolute p-12 lg:p-18 bg-cover bg-center z-10 gradient-bg w-[330px] md:w-[500px] lg:w-[900px] left-1/2 -translate-x-1/2 bottom-0 translate-y-1/2"
         >
           <div className="relative z-10 flex flex-col items-start">
             <div className="mb-6 text-left">
@@ -48,7 +48,7 @@ const Companies = () => {
             </Button>
           </div>
 
-          <div className="absolute right-[-40px] top-1/2 -translate-y-1/2 z-20 w-[500px] -mt-5 h-[370px]">
+          <div className="hidden lg:block absolute right-[-40px] top-1/2 -translate-y-1/2 z-20  w-[500px] -mt-5 h-[370px]">
             <Image
               src="/images/word-wide.png"
               alt="World wide"

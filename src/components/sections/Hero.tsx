@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className="py-10 relative overflow-hidden">
       {/* Background gradient waves */}
-      <div className="absolute bottom-[0] left-0 w-full h-[474px]" >
+      <div className="hidden md:block absolute bottom-[0] left-0 w-full h-[474px]" >
         <Image
           src="/images/gredient-bg.png"
           alt="gredient wave"
@@ -17,7 +17,7 @@ const Hero = () => {
       </div>
 
       {/* Blur balls */}
-      <div className="absolute top-60 left-50 w-[130px] h-[130px] -z-10">
+      <div className="hidden md:block absolute top-60 left-50 w-[130px] h-[130px] -z-10">
         <Image
           src="/images/blur-balls.png"
           alt="blur ball"
@@ -25,7 +25,7 @@ const Hero = () => {
           className="object-contain"
         />
       </div>
-      <div className="absolute top-30 right-50 w-[130px] h-[130px] -z-10">
+      <div className="hidden md:block absolute top-30 right-50 w-[130px] h-[130px] -z-10">
         <Image
           src="/images/blur-balls.png"
           alt="blur ball"
@@ -48,7 +48,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="relative px-6 w-full lg:w-[860px]  h-[200px] sm:h-[200px] md:h-[350px] lg:h-[550px] mx-auto mb-[100px]">
+        <div className="hidden md:block relative px-6 w-full lg:w-[860px]  h-[200px] sm:h-[200px] md:h-[350px] lg:h-[550px] mx-auto mb-[100px]">
           <Image
             src="/images/dashboard-placeholder.png"
             alt="dashboard image placeholder"
