@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Rapid - Beautiful Landing Page",
+  title: "Squid - Beautiful Landing Page",
   description: "A modern landing page with beautiful design",
 };
 
