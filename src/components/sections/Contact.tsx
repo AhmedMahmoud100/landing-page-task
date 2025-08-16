@@ -1,14 +1,34 @@
 import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
+import Image from 'next/image';
 
 const Contact = () => {
   return (
     <section id="contact" className="py-20 relative">
 
       <Container>
-        <div className="flex flex-col lg:flex-row gap-12 items-center pt-[200px]">
-          <div className="lg:w-1/2">
+        <div className="flex flex-col lg:flex-row gap-12 items-center pt-[200px] relative">
+
+          {/* Blur balls */}
+          <div className="absolute top-30 left-0 w-[130px] h-[130px] -z-10">
+            <Image
+              src="/images/blur-balls.png"
+              alt="blur ball"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <div className="absolute bottom-[-70px] left-120 w-[130px] h-[130px] -z-10">
+            <Image
+              src="/images/blur-balls.png"
+              alt="blur ball"
+              fill
+              className="object-contain"
+            />
+          </div>
+
+          <div className="lg:w-1/2 ">
             <img src="/images/earth.png" alt="Globe" className="w-full h-auto" />
           </div>
 

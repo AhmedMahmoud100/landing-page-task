@@ -17,8 +17,22 @@ const Hero = () => {
       </div>
 
       {/* Blur balls */}
-      <div className="absolute top-20 left-20 w-40 h-40 rounded-full bg-pink-500 opacity-20 blur-3xl -z-10" />
-      <div className="absolute top-40 right-20 w-40 h-40 rounded-full bg-purple-500 opacity-20 blur-3xl -z-10" />
+      <div className="absolute top-60 left-50 w-[130px] h-[130px] -z-10">
+        <Image
+          src="/images/blur-balls.png"
+          alt="blur ball"
+          fill
+          className="object-contain"
+        />
+      </div>
+      <div className="absolute top-30 right-50 w-[130px] h-[130px] -z-10">
+        <Image
+          src="/images/blur-balls.png"
+          alt="blur ball"
+          fill
+          className="object-contain"
+        />
+      </div>
 
       <Container>
         <div className="text-center max-w-4xl mx-auto mb-12">
