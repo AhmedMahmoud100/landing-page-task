@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row gap-12 items-center pt-[200px] relative">
 
           {/* Blur balls */}
-          <div className="absolute top-30 left-0 w-[130px] h-[130px] -z-10">
+          <div className="hidden md:block absolute top-30 left-0 w-[130px] h-[130px] -z-10">
             <Image
               src="/images/blur-balls.png"
               alt="blur ball"
@@ -19,7 +19,7 @@ const Contact = () => {
               className="object-contain"
             />
           </div>
-          <div className="absolute bottom-[-70px] left-120 w-[130px] h-[130px] -z-10">
+          <div className="hidden md:block absolute bottom-[-70px] left-120 w-[130px] h-[130px] -z-10">
             <Image
               src="/images/blur-balls.png"
               alt="blur ball"
